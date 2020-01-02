@@ -20,6 +20,10 @@
 # Licensed under The MIT License [see LICENSE for details]
 # Written by Ross Girshick
 # --------------------------------------------------------
+#############################################################################
+# THIS FILE HAS BEEN MODIFIED by Tuure Saloheimo,
+# using changes made by gcheron, which were sourced from
+# https://github.com/facebookresearch/Detectron/pull/869
 
 """Detectron config system.
 
@@ -132,6 +136,10 @@ __C.TRAIN.PROPOSAL_FILES = ()
 # This feature is critical for saving memory (and makes training slightly
 # faster)
 __C.TRAIN.ASPECT_GROUPING = True
+
+# Include background images (images with no annotation) in the training
+# (code from https://github.com/facebookresearch/Detectron/pull/869)
+__C.TRAIN.INCLUDE_BKG_IMAGES = False
 
 # ---------------------------------------------------------------------------- #
 # RPN training options

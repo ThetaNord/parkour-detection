@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 ##############################################################################
+# THIS FILE HAS BEEN MODIFIED by Tuure Saloheimo,
+# using changes made by gcheron, which were sourced from
+# https://github.com/facebookresearch/Detectron/pull/869
 
 """Functions for common roidb manipulations."""
 
@@ -115,6 +118,9 @@ def filter_for_training(roidb):
         # Valid images have:
         #   (1) At least one foreground RoI OR
         #   (2) At least one background RoI
+        if cfg.TRAIN.INCLUDE_BKG_IMAGES and len(entry['boxes']) == 0:
+            return True  # this is a bkg image
+
         overlaps = entry['max_overlaps']
         # find boxes with sufficient overlap
         fg_inds = np.where(overlaps >= cfg.TRAIN.FG_THRESH)[0]

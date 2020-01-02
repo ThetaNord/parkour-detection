@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 ##############################################################################
+# THIS FILE HAS BEEN MODIFIED by Tuure Saloheimo,
+# to include additional datasets used for training the networks described in
+# Automatic Recognition of Playful Physical Activity Opportunities of the 
+# Urban Environment
 
 """Collection of available datasets."""
 
@@ -201,6 +205,222 @@ _DATASETS = {
             _DATA_DIR + '/VOC2012/annotations/voc_2012_val.json',
         _DEVKIT_DIR:
             _DATA_DIR + '/VOC2012/VOCdevkit2012'
+    },
+    'parkour_train_8k_1x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_8k_1x.json'
+    },
+    'parkour_train_8k_2x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_8k_2x.json'
+    },
+    'parkour_train_8k_3x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_8k_3x.json'
+    },
+    'parkour_train_8k_4x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_8k_4x.json'
+    },
+    'parkour_train_8k_5x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_8k_5x.json'
+    },
+    'parkour_train_7k_1x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_7k_1x.json'
+    },
+    'parkour_train_7k_2x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_7k_2x.json'
+    },
+    'parkour_train_7k_3x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_7k_3x.json'
+    },
+    'parkour_train_7k_4x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_7k_4x.json'
+    },
+    'parkour_train_6k_1x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_6k_1x.json'
+    },
+    'parkour_train_6k_2x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_6k_2x.json'
+    },
+    'parkour_train_6k_3x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_6k_3x.json'
+    },
+    'parkour_train_6k_4x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_6k_4x.json'
+    },
+    'parkour_train_5k_1x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_5k_1x.json'
+    },
+    'parkour_train_5k_2x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_5k_2x.json'
+    },
+    'parkour_train_5k_3x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_5k_3x.json'
+    },
+    'parkour_train_5k_4x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_5k_4x.json'
+    },
+    'parkour_train_4k_1x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_4k_1x.json'
+    },
+    'parkour_train_4k_2x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_4k_2x.json'
+    },
+    'parkour_train_4k_3x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_4k_3x.json'
+    },
+    'parkour_train_4k_4x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_4k_4x.json'
+    },
+    'parkour_train_3k_1x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_3k_1x.json'
+    },
+    'parkour_train_3k_2x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_3k_2x.json'
+    },
+    'parkour_train_3k_3x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_3k_3x.json'
+    },
+    'parkour_train_3k_4x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_3k_4x.json'
+    },
+    'parkour_train_2k_1x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_2k_1x.json'
+    },
+    'parkour_train_2k_2x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_2k_2x.json'
+    },
+    'parkour_train_2k_3x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_2k_3x.json'
+    },
+    'parkour_train_2k_4x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_2k_4x.json'
+    },
+    'parkour_train_1k_1x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_1k_1x.json'
+    },
+    'parkour_train_1k_2x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_1k_2x.json'
+    },
+    'parkour_train_1k_3x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_1k_3x.json'
+    },
+    'parkour_train_1k_4x': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_train_1k_4x.json'
+    },
+    'parkour_val': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_val.json'
+    },
+    'parkour_val_plus': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_val_plus.json'
+    },
+    'parkour_val_2k': {
+        _IM_DIR:
+            _DATA_DIR + '/parkour/JPEGImages',
+        _ANN_FN:
+            _DATA_DIR + '/parkour/annotations/parkour_val_2k.json'
     }
 }
 
